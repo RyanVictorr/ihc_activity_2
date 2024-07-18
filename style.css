@@ -1,5 +1,4 @@
 /*Tudo*/
-
 body{
     height: 100%;
     margin: 0;
@@ -29,15 +28,15 @@ header{
 .slogan{
     margin: 0px;
     width: 100vh;
-    font-size: 22px;
+    font-size: 32px;
     text-align: center;
 }
 
 .header-links{
-    width: 11%;
+    width: 15%;
     margin-right: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 .cadastre-se,
@@ -68,21 +67,24 @@ header{
 }
 
 .header-links button{
-    background-color: #000000;
     color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 30px;
-    height: 35px;
+    height: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .cadastre-se{
-    margin-right: 5px;
+    background-color: #32CD32;
+    font-size: 18px;
     padding: 0px 3px 0px 3px;
 }
 .login{
-    width: 60px;
+    background-color: #1E90FF;
+    margin-right: 4px;
+    font-size: 18px;
+    width: 80px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -107,7 +109,7 @@ main{
 .image-caption{
     height: 242px;
     width: 665px;
-    font-size: 32px;
+    font-size: 24px;
     position: absolute;
     bottom: 0; 
     right: 0; 
@@ -129,6 +131,7 @@ main{
 .slogan2{
     width: 40%;
     text-align: center;
+    font-size: 18px;
 }
 
 .example-images{
@@ -154,6 +157,7 @@ footer{
     width: 100%
 }
 .number1{
+
     display: flex;
     justify-content: space-between;
 }
@@ -210,3 +214,118 @@ footer{
     justify-content: center;
 }
 
+footer a{
+    color: #1E90FF;
+}
+
+/*Responsividade*/
+@media (max-width: 600px) {
+    /*Header*/
+    .logo {
+        width: 101px;
+        height: 50px;
+        margin: 0px 0px 0px 5px;
+    }
+
+    .slogan{
+        font-size: 16px;
+        width: 50%;
+    }
+    .header-links{
+        width: 25%;
+        display: flex;
+        margin-right: 2px;
+    }
+
+    .header-links button{
+        height: 25px;
+        align-items: center;
+    }
+
+    .cadastre-se{
+        margin-right: 10px;
+        font-size: 10px;
+        margin-right: 6px;
+        width: 60%;
+
+    }
+
+    .login{
+        background-color: #1E90FF;
+        margin-right: 4px;
+        font-size: 10px;
+        width: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    /*corpo do site*/
+    .image-caption {
+        height: 100px;
+        width: 200px;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .slogan2 {
+        width: 80%;
+        font-size: 16px;
+        margin: 1.5% 0% 1% 0%;
+    }
+
+    /*Rodapé*/
+    .footer-image {
+        width: 20%;
+        padding: 8px;
+    }
+
+    .footer-icons {
+        width: 20%;
+    }
+
+    .footer-text{
+        font-size: 10px;
+    }
+
+    .number2 {
+        padding-left: 8px;
+        padding-right: 20px;
+    }
+
+    .footer-links2 {
+        padding-left: 8px;
+        line-height: 15px;
+    }
+}
+@media (max-width: 400px) {
+    
+
+    header{
+        width: 100%;
+    }
+    .logo {
+        width: 60px;
+        height: 50px;
+        margin: 1px 1px 1px 5px;
+    }
+
+    .slogan{
+        font-size: 14px;
+        width: 60%;
+    }
+}
+@media (min-width: 1025px) {
+    /* Estilos para desktops e telas grandes */
+    /*Header*/
+    .slogan {
+        width: 80vh;
+    }
+    .header-links{
+        width: 20%;
+    }
+    .header-links button {
+        margin: 4px;
+    }
+}
